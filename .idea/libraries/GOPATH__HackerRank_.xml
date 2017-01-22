@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="GOPATH &lt;HackerRank&gt;">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../golang.org" />
+      <root url="file://$PROJECT_DIR$/../support_dashboard" />
+      <root url="file://$PROJECT_DIR$/../goLearn" />
+      <root url="file://$PROJECT_DIR$/../github.com" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../golang.org" />
+      <root url="file://$PROJECT_DIR$/../support_dashboard" />
+      <root url="file://$PROJECT_DIR$/../goLearn" />
+      <root url="file://$PROJECT_DIR$/../github.com" />
+    </SOURCES>
+    <excluded>
+      <root url="file://$PROJECT_DIR$" />
+    </excluded>
+  </library>
+</component>
