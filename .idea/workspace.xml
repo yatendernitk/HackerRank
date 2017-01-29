@@ -222,6 +222,7 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="GO_FMT" value="false" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -561,6 +562,14 @@
       <option name="presentableId" value="Default" />
       <updated>1479231394559</updated>
     </task>
+    <task id="LOCAL-00001" summary="solving Pairs problem (inefficient way.. will solve by greedy approach next)">
+      <created>1485711608258</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1485711608258</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -603,6 +612,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="solving Pairs problem (inefficient way.. will solve by greedy approach next)" />
+    <option name="LAST_COMMIT_MESSAGE" value="solving Pairs problem (inefficient way.. will solve by greedy approach next)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
