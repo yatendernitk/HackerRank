@@ -38,10 +38,6 @@ func main(){
 
 			if i==j {
 				d1 += a[i][j]
-			}else{
-				if i+j == totalNum-1 {
-
-				}
 			}
 		}
 	}
