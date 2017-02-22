@@ -11,7 +11,6 @@ import (
 
 func main() {
 	var totalCase int
-
 	fmt.Scan(&totalCase)
 	reader := bufio.NewReader(os.Stdin)
 
