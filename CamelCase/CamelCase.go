@@ -2,9 +2,9 @@ package main
 
 import (
 	"bufio"
+	"fmt"
 	"os"
 	"strings"
-	"fmt"
 )
 
 func main() {
@@ -13,19 +13,19 @@ func main() {
 	str := strings.TrimSpace(text)
 	x := ""
 	y := 0
-	for i:=0 ; i< len(str) ; i++ {
-		x = str[i:i+1]
+	for i := 0; i < len(str); i++ {
+		x = str[i : i+1]
 		if isUpperCase(x) {
 			//fmt.Println("")
-			y = y+1
+			y = y + 1
 
-		}else{
+		} else {
 
 			//fmt.Print(x)
 		}
 
 	}
-	y = y+1
+	y = y + 1
 	fmt.Println(y)
 
 }
@@ -33,7 +33,7 @@ func main() {
 func isUpperCase(x string) bool {
 	if x == strings.ToUpper(x) {
 		return true
-	}else{
+	} else {
 		return false
 	}
 }
