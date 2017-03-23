@@ -4,36 +4,36 @@ import (
 	"github.com/fogleman/gg"
 	"log"
 	"strconv"
-	"fmt"
-	"time"
-	//"runtime"
+	//"fmt"
+	//"time"
+	////"runtime"
 	//"sync"
 	//"sync"
 	"runtime"
 )
 //var wg sync.WaitGroup
-var l = 0
+//var l = 0
 func main() {
 	runtime.GOMAXPROCS(4)
-	start := time.Now()
-	for i:=0; i< 500 ; i++ {
-		fmt.Println(i)
-		drawImg(i)
-	}
+	//start := time.Now()
+	//for i:=0; i< 500 ; i++ {
+	//	fmt.Println(i)
+		drawImg(1)
+	//}
 	//wg.Wait()
-	elapsed := time.Since(start)
-	log.Println(l)
-	log.Printf("Binomial took %s", elapsed)
-	nm := ""
-	fmt.Scanf("%s",&nm)
+	//elapsed := time.Since(start)
+	////log.Println(l)
+	//log.Printf("Binomial took %s", elapsed)
+	//nm := ""
+	//fmt.Scanf("%s",&nm)
 
 }
 
 func drawImg(i int) {
-	l++
+	//l++
 	//wg.Add(1)
-	go func(){
-		const S = 1024
+	//go func(){
+		const S = 720
 		im, err := gg.LoadImage("src.jpg")
 		if err != nil {
 			log.Fatal(err)
@@ -48,13 +48,13 @@ func drawImg(i int) {
 		}
 		dc.DrawStringAnchored("Hello, world!", S/2, S/2, 0.5, 0.5)
 		dc.DrawRoundedRectangle(0, 0, 512, 512, 0)
-		dc.DrawImage(im, 0, 0)
+		dc.DrawImage(im, 100, 100)
 		dc.DrawStringAnchored("Hello, world!", S/2, S/2, 0.5, 0.5)
 		dc.Clip()
 		//dc.DrawImage(im, 0, 0)
 		str := "clips/out"+strconv.Itoa(i)+".png"
 		dc.SavePNG(str)
 		//wg.Done()
-	}()
+	//}()
 
 }
