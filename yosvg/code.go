@@ -3,6 +3,8 @@ package main
 import (
 	"github.com/ajstarks/svgo"
 	"os"
+	_ "image"
+	_ "fmt"
 )
 
 func main(){
@@ -11,8 +13,7 @@ func main(){
 
 	canvas := svg.New(os.Stdout)
 	canvas.Start(width,height)
-	canvas.Title("canvas fade")
-	canvas.Image(0,0,400,400,"src.jpg","0.50")
+	canvas.Image(0,0,512,512,"src.jpg","0.50")
 	canvas.End()
-
+	//k := canvas
 }
