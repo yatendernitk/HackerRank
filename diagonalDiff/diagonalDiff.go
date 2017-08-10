@@ -41,6 +41,7 @@ func main(){
 			}
 		}
 	}
+
 	k := totalNum-1
 	for j:=0; j<totalNum; j++{
 		if k>=0{

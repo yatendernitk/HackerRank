@@ -23,14 +23,11 @@ func main() {
 		finalNum,_ := strconv.Atoi(num)
 
 		splittedString = strings.Split(num, "")
-		//fmt.Println(splittedString)
 		for j:= range splittedString {
 			numInInt,_ = strconv.Atoi(splittedString[j])
-			//fmt.Println(numInInt)
 			if numInInt != 0 {
 				if finalNum%numInInt>0  {
 
-					//fmt.Println("we r heere")
 				}else{
 					numDiv++
 				}
