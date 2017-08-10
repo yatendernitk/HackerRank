@@ -10,14 +10,14 @@ import (
 	"fmt"
 )
 
-	//draw.Draw(mask, mask.Bounds(), image.Transparent, image.ZP, draw.Over)
+//draw.Draw(mask, mask.Bounds(), image.Transparent, image.ZP, draw.Over)
 
 func main() {
 	//runtime.GOMAXPROCS(4)
 	//start := time.Now()
 	//for i:=0; i< 500 ; i++ {
 	//	fmt.Println(i)
-		drawImg()
+	drawImg()
 	//}
 	//nm := ""
 	//fmt.Scanf("%s",&nm)
@@ -43,15 +43,15 @@ func drawImg() {
 	img3,_,_ := image.Decode(fImg3)
 	img2, _, _ := image.Decode(fImg2)
 
-		//var width int = img1.Bounds().Dx()
-		//var h int = img1.Bounds().Dy()
+	//var width int = img1.Bounds().Dx()
+	//var h int = img1.Bounds().Dy()
 
 	var m = image.NewRGBA(image.Rect(0, 0,img1.Bounds().Dx(),img1.Bounds().Dy() ))
 	mask := image.NewUniform(color.Alpha{150})
 	draw.Draw(m, m.Bounds(), img1, image.Point{0,0}, draw.Src)
 
 
-	draw.DrawMask(m, m.Bounds(), img3, image.Point{0,-400},mask,image.Point{-200,-100}, draw.Over)
+	draw.DrawMask(m, m.Bounds(), img3, image.Point{0,-500},mask,image.Point{-200,-100}, draw.Over)
 
 
 
