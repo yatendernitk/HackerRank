@@ -34,6 +34,7 @@ func stringToNumArray(strArr []string) []float64 {
 		inArr[i], _ = strconv.ParseFloat(strArr[i], 64)
 	}
 	sort.Float64s(inArr)
+
 	//fmt.Println(inArr)
 	return inArr
 }
